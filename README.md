@@ -40,11 +40,7 @@ GitHub Pages hospeda sitios estáticos sin coste. Para que la URL sea `https://w
 
 ## Personalizar
 
-Edita `index.html` sección **Sobre mí** y el email en los enlaces. Opcional: sustituye el avatar `<div class="avatar">W</div>` por una imagen:
-
-```html
-<img class="avatar-img" src="assets/foto.jpg" alt="Wonternal" />
-```
+Edita `index.html` sección **Sobre mí** y el email en los enlaces. La foto de perfil es `portfolioImage.jpg` en la raíz del repo (súbela junto al resto de archivos).
 
 ---
 

@@ -451,18 +451,15 @@ main {
   min-width: 260px;
 }
 
-.avatar {
+.avatar-img {
   width: 88px;
   height: 88px;
   margin: 0 auto 1rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-2), #8338ec);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: 800;
-  color: #fff;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border: 3px solid rgba(77, 150, 255, 0.45);
   box-shadow: 0 8px 32px rgba(77, 150, 255, 0.35);
 }
 
