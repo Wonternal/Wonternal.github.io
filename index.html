@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Wonternal — Game Hub con juegos arcade Chicken Road y Space War."
+    />
+    <title>Wonternal · Game Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="logo" href="#inicio">Wonternal</a>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#juegos">Juegos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a
+        class="btn btn--ghost btn--sm"
+        href="https://github.com/Wonternal"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <p class="hero__eyebrow">Game Hub · Portfolio</p>
+        <h1 class="hero__title">
+          Arcade retro,<br />
+          <span class="gradient-text">hecho para jugar</span>
+        </h1>
+        <p class="hero__lead">
+          Colección de mini videojuegos open source. Juega en el navegador o
+          descarga el código desde GitHub.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#juegos">Ver juegos</a>
+          <a
+            class="btn btn--outline"
+            href="https://github.com/Wonternal"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Repositorios</a
+          >
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__value">2</span>
+            <span class="stat__label">Juegos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Web + Python</span>
+            <span class="stat__label">Stacks</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">MIT</span>
+            <span class="stat__label">Licencia</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="juegos" class="section">
+        <div class="section__head">
+          <h2>Juegos</h2>
+          <p>Elige un título y pulsa jugar. Chicken Road funciona directamente en esta web.</p>
+        </div>
+
+        <div class="games">
+          <article class="game-card game-card--chicken">
+            <div class="game-card__badge">Navegador</div>
+            <div class="game-card__icon" aria-hidden="true">🐔</div>
+            <h3 class="game-card__title">Chicken Road</h3>
+            <p class="game-card__desc">
+              Cruza la carretera estilo Frogger. Salta entre casillas, esquiva
+              el tráfico y llega a la meta. Gráficos y audio procedurales en
+              Canvas.
+            </p>
+            <ul class="game-card__tags">
+              <li>JavaScript</li>
+              <li>Canvas 2D</li>
+              <li>Táctil</li>
+            </ul>
+            <div class="game-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://wonternal.github.io/chicken-road/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Jugar ahora</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/Wonternal/chicken-road"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </article>
+
+          <article class="game-card game-card--space">
+            <div class="game-card__badge game-card__badge--desktop">Escritorio</div>
+            <div class="game-card__icon" aria-hidden="true">🚀</div>
+            <h3 class="game-card__title">Space War</h3>
+            <p class="game-card__desc">
+              Shooter vertical arcade en Python. Oleadas de enemigos, power-ups
+              y estética neón. Instálalo y juega en local con Pygame CE.
+            </p>
+            <ul class="game-card__tags">
+              <li>Python 3.10+</li>
+              <li>Pygame CE</li>
+              <li>Arcade</li>
+            </ul>
+            <div class="game-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/Wonternal/space-war"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver en GitHub</a
+              >
+              <a class="btn btn--ghost" href="#space-war-setup">Cómo ejecutar</a>
+            </div>
+          </article>
+        </div>
+
+        <details id="space-war-setup" class="setup-panel">
+          <summary>Ejecutar Space War en tu PC</summary>
+          <pre><code>git clone https://github.com/Wonternal/space-war.git
+cd space-war
+python -m venv .venv
+.venv\Scripts\activate          # Windows
+pip install -r requirements.txt
+python -m space_war</code></pre>
+        </details>
+      </section>
+
+      <section id="sobre-mi" class="section section--about">
+        <div class="about">
+          <div class="about__text">
+            <h2>Sobre mí</h2>
+            <p>
+              Hola, soy <strong>Wonternal</strong>. Este hub reúne proyectos de
+              videojuegos que voy desarrollando como arcade retro: lógica clara,
+              controles simples y mucha personalidad visual.
+            </p>
+            <p>
+              Me interesa el desarrollo de juegos, el código limpio y compartir
+              proyectos open source. Si te gusta lo que ves, déjame una estrella
+              en GitHub o contribuye con ideas.
+            </p>
+            <p class="about__note">
+              ✏️ Edita este texto en <code>portfolio/index.html</code> con tu
+              bio real, foto y enlaces.
+            </p>
+          </div>
+          <div class="about__card">
+            <div class="avatar" aria-hidden="true">W</div>
+            <h3>Wonternal</h3>
+            <p class="about__role">Game Developer · Hobbyist</p>
+            <ul class="about__links">
+              <li>
+                <a href="https://github.com/Wonternal" target="_blank" rel="noopener noreferrer"
+                  >github.com/Wonternal</a
+                >
+              </li>
+              <li>
+                <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="cta">
+          <h2>¿Seguimos construyendo?</h2>
+          <p>Más juegos llegarán al hub. Sígueme en GitHub para ver los repos nuevos.</p>
+          <a
+            class="btn btn--primary btn--lg"
+            href="https://github.com/Wonternal?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver todos los repos</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Wonternal · Game Hub</p>
+      <p>
+        <a href="https://github.com/Wonternal/chicken-road">Chicken Road</a>
+        ·
+        <a href="https://github.com/Wonternal/space-war">Space War</a>
+        · MIT License
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
